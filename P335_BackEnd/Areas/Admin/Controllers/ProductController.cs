@@ -88,10 +88,10 @@ namespace P335_BackEnd.Areas.Admin.Controllers
                 foreach (var image in model.Images)
                 {
                     var imageUrl = _fileService.AddFile(image, Path.Combine("img", "featured"));
-
+                    
                     newProduct.ProductImages.Add(new ProductImage
                     {
-                        ImageUrl = imageUrl,
+                        Images = imageUrl,
                         Order= order++
                     });
                 }

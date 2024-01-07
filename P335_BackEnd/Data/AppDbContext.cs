@@ -24,6 +24,7 @@ namespace P335_BackEnd.Data
         public DbSet<ProductTypeProduct> ProductTypeProducts { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
+        public DbSet<Image> Images { get; set; }  
     }
 }
 
